@@ -17,14 +17,9 @@
 #ifndef __L3GD20_H__
 #define __L3GD20_H__
 
-#if (ARDUINO >= 100)
- #include "Arduino.h"
-#else
- #include "WProgram.h"
-#endif
+#include "Particle.h"
 
-#include <Adafruit_Sensor.h>
-#include <Wire.h>
+#include "Adafruit_10DOF_IMU/Adafruit_Sensor.h"
 
 /*=========================================================================
     I2C ADDRESS/BITS AND SETTINGS

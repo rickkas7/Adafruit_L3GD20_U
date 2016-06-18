@@ -14,16 +14,14 @@
   Written by Kevin "KTOWN" Townsend for Adafruit Industries.
   BSD license, all text above must be included in any redistribution
  ****************************************************/
-#if ARDUINO >= 100
- #include "Arduino.h"
-#else
- #include "WProgram.h"
-#endif
+#include "Particle.h"
 
-#include <Wire.h>
 #include <limits.h>
 
-#include "Adafruit_L3GD20_U.h"
+#include "Adafruit_10DOF_IMU/Adafruit_L3GD20_U.h"
+
+// This is an ugly hack because that's the test used to use Write.write instead of Wire.send everywhere
+#define ARDUINO 100
 
 /***************************************************************************
  PRIVATE FUNCTIONS
